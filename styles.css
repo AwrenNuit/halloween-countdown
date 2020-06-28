@@ -19,7 +19,7 @@ h1 {
   border: 6px solid #ff9100;
   font-size: 4rem;
   height: 90px;
-  margin-top: 40px;
+  margin: 40px auto;
   text-align: center;
   width: 460px;
 }
