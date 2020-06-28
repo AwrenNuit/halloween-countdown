@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* test font */
+  font-family: "Luminari";
+  margin: 40px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#countdown-container {
+  border: 6px solid black;
+  font-size: 4rem;
+  height: 90px;
+  margin-top: 40px;
+  text-align: center;
+  width: 460px;
+}
