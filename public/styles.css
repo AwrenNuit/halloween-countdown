@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  /* test font */
+  font-family: "Luminari";
+  color: white;
+  margin: 40px;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+#countdown-container {
+  border: 6px solid #ff9100;
+  font-size: 4rem;
+  height: 90px;
+  margin: 40px auto;
+  padding-top: 1.5rem;
+  text-align: center;
+  width: 460px;
+}
+
+#day,
+#hour,
+#min,
+#sec {
+  display: inline-block;
+  height: 86px;
+  position: relative;
+}
+
+#day {
+  width: 100px;
+}
+
+#hour,
+#min,
+#sec {
+  width: 80px;
+}
+
+#day::before,
+#hour::before,
+#min::before,
+#sec::before {
+  font-size: 1.2rem;
+  left: 10px;
+  position: absolute;
+  top: -5px;
+}
+
+#day::before {
+  content: "day"
+}
+
+#hour::before {
+  content: "hour"
+}
+
+#min::before {
+  content: "min"
+}
+
+#sec::before {
+  content: "sec"
+}
+
+#pumpkin {
+  background-color: #ff9100;
+  border-radius: 40% / 50%;
+  height: 200px;
+  margin: 80px auto;
+  position: relative;
+  width: 250px;
+}
+
+#pumpkin::before, #pumpkin::after {
+  content: '';
+  border: 2px solid #da7b00;
+  border-radius: 40% / 50%;
+  box-shadow: 0px 0px 5px 0px #b46600;
+  height: 196px;
+  position: absolute;
+}
+
+#pumpkin::before {
+  left: 25px;
+  width: 200px;
+}
+
+#pumpkin::after {
+  left: 75px;
+  width: 100px;
+}
+
+#pumpkin-stem, #pumpkin-stem::before {
+  position: absolute;
+  width: 20px;
+}
+
+#pumpkin-stem {
+  background-color: #5c442a;
+  border-top-left-radius: 20px;
+  height: 40px;
+  left: 120px;
+  top: -40px;
+  transform: skewX(-15deg);
+}
+
+#pumpkin-stem::before {
+  background-color: #000;
+  border-radius: 50%;
+  content: '';
+  height: 35px;
+  left: 15px;
+  top: 5px;
+}
+
+#pumpkin-eyes, #pumpkin-eyes::before {
+  background-color: #000;
+  border-right: 20px solid #ff9100;
+  border-bottom: 30px solid #000;
+  border-left: 20px solid #ff9100;
+  height: 0;
+  position: absolute;
+  width: 0;
+  z-index: 1;
+}
+
+#pumpkin-eyes {
+  left: 60px;
+  top: 60px;
+}
+
+#pumpkin-eyes::before {
+  content: '';
+  left: 100px;
+  top: 0px;
+}
+
+#pumpkin-mouth {
+  background-color: #000;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 20px;
+  left: 80px;
+  position: absolute;
+  top: 150px;
+  width: 125px;
+  z-index: 1;
+}
+
+#pumpkin-mouth::before, #pumpkin-mouth::after {
+  background-color: #ff9100;
+  content: '';
+  height: 10px;
+  position: absolute;
+}
+
+#pumpkin-mouth::before {
+  left: 30px;
+  width: 20px;
+}
+
+#pumpkin-mouth::after {
+  left: 80px;
+  width: 15px;
+}
