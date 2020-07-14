@@ -21,8 +21,54 @@ h1 {
   font-size: 4rem;
   height: 90px;
   margin: 40px auto;
+  padding-top: 1.5rem;
   text-align: center;
   width: 460px;
+}
+
+#day,
+#hour,
+#min,
+#sec {
+  display: inline-block;
+  height: 86px;
+  position: relative;
+}
+
+#day {
+  width: 100px;
+}
+
+#hour,
+#min,
+#sec {
+  width: 80px;
+}
+
+#day::before,
+#hour::before,
+#min::before,
+#sec::before {
+  font-size: 1.2rem;
+  left: 10px;
+  position: absolute;
+  top: -5px;
+}
+
+#day::before {
+  content: "day"
+}
+
+#hour::before {
+  content: "hour"
+}
+
+#min::before {
+  content: "min"
+}
+
+#sec::before {
+  content: "sec"
 }
 
 #pumpkin {
