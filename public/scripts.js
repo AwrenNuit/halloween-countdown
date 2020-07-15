@@ -4,7 +4,7 @@ const ghoulsInTheGraveyard = setInterval(() => {
 }, 1000);
 
 function ghostsComeOutAndSkeletonsDance() {
-  const pumpkinsLaugh = Date.parse(spookyDay) - Date.parse(new Date());
+  const pumpkinsLaugh = Date.parse(spookyDay.replace(' ', 'T')) - Date.parse(new Date());
   const hayridesAndOwls = Math.floor(pumpkinsLaugh / (1000 * 60 * 60 * 24));
   const cauldronsBubble = Math.floor((pumpkinsLaugh / (1000 * 60 * 60)) % 24);
   const spidersBatsAndBlackCats = Math.floor((pumpkinsLaugh / 1000 / 60) % 60);
