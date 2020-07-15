@@ -6,7 +6,7 @@
 body {
   background-color: #000;
   /* test font */
-  font-family: "Luminari", fantasy;
+  font-family: "Luminari", Arial, Helvetica, sans-serif;
   color: #fff;
   margin: 40px;
 }
