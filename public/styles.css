@@ -6,8 +6,8 @@
 body {
   background-color: #000;
   /* test font */
-  font-family: "Luminari";
-  color: white;
+  font-family: "Luminari", fantasy;
+  color: #fff;
   margin: 40px;
 }
 
@@ -171,4 +171,64 @@ h1 {
 #pumpkin-mouth::after {
   left: 80px;
   width: 15px;
+}
+
+@media(max-width: 635px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  #countdown-container {
+    font-size: 3rem;
+    height: 65px;
+    padding-top: 1rem;
+    width: 320px;
+  }
+
+  #day {
+    width: 80px;
+  }
+  
+  #hour,
+  #min,
+  #sec {
+    width: 60px;
+  }
+}
+
+@media(max-width: 490px) {
+  body {
+    margin: 40px 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #countdown-container {
+    font-size: 2.5rem;
+    height: 55px;
+    margin: 20px auto;
+    padding-top: 1rem;
+    width: 270px;
+  }
+
+  #day {
+    width: 70px;
+  }
+  
+  #hour,
+  #min,
+  #sec {
+    width: 50px;
+  }
+
+  #day::before,
+  #hour::before,
+  #min::before,
+  #sec::before {
+    font-size: 1.2rem;
+    left: 3px;
+    top: -10px;
+  }
 }
